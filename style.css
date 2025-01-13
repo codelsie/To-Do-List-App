@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff0f3; /* Subtle pink background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #ff9aa2, #ff758f); /* Gradient for elegance */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add depth */
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Soft shadow for a bold look */
+  }
+  
+  /* Input Section */
+  .input-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .input-section input {
+    padding: 12px;
+    border: 2px solid #ffa1b5;
+    border-radius: 8px;
+    flex: 1;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input-section input:focus {
+    outline: none;
+    border-color: #ff6f91;
+    box-shadow: 0 0 5px rgba(255, 111, 145, 0.5);
+  }
+  
+  .input-section button {
+    background: #ff6f91;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add depth */
+  }
+  
+  .input-section button:hover {
+    background: #ff4a68;
+    box-shadow: 0 6px 10px rgba(255, 74, 104, 0.3); /* Add hover effect */
+  }
+  
+  /* Task List */
+  #task-list {
+    list-style: none;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #task-list li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px; /* Rounded corners for a smooth look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Subtle hover animation */
+  }
+  
+  #task-list li:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #task-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+    background: #ffe4ea;
+    color: #999;
+  }
+  
+  #task-list li button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff6f91;
+    transition: color 0.3s;
+  }
+  
+  #task-list li button:hover {
+    color: #ff4760;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    background: #ffb6c1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-btn:hover {
+    background: #ff6f91;
+    box-shadow: 0 6px 10px rgba(255, 111, 145, 0.3);
+  }
+  
+  /* Clear Button */
+  #clear-tasks-btn {
+    background: #ff6f91;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #clear-tasks-btn:hover {
+    background: #ff4a68;
+    box-shadow: 0 6px 10px rgba(255, 74, 104, 0.3);
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(135deg, #ff758f, #ff9aa2); /* Elegant footer gradient */
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+  }
+  
+  /* New CSS for Completed Button */
+#task-list li .complete-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4caf50; /* Green color for the "Completed" button */
+    transition: color 0.3s;
+  }
+  
+  #task-list li .complete-btn:hover {
+    color: #2e8b57; /* Dark green when hovering */
+  }
+  
